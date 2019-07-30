@@ -36,10 +36,6 @@ def toggleVPNon():
 def launchApps():
   subprocess.run(["open", "/Applications/Microsoft Outlook.app"])
   subprocess.run(["open", "/Applications/Slack.app"])
-  # subprocess.run(["open", "/Applications/Telegram.app"])
-  # subprocess.run(["open", "/Applications/Messages.app"])
-
-#   webbrowser.open('https://mail.google.com/mail/u/1/')
   webbrowser.open('https://mail.google.com/mail/u/0/')
 
 if __name__ == '__main__':
