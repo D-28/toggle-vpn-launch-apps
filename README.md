@@ -1,6 +1,6 @@
 # toggle-vpn-launch-apps
 
-For MacOs Only
+For MacOS Only
 
 
 ### Configuration:
