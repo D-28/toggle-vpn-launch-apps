@@ -2,6 +2,9 @@
 
 For MacOS Only
 
+This vpnToggle.py script reads variables from config.py to automate VPN and launch everyday programs.
+
+
 
 ### Configuration:
 
