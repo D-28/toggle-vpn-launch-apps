@@ -11,7 +11,7 @@
 
 Options:
 
-1 . -off    Toggle VPN off (shut down Any Connect program)
+boot -off    Toggle VPN off (shut down Any Connect program)
 
-2.  -vpn    Toggle VPN on without laumnching additional programs
+boot -vpn    Toggle VPN on without laumnching additional programs
     
