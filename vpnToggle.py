@@ -3,24 +3,22 @@ import pyautogui
 import subprocess
 import time
 import sys
+import os
 import webbrowser
 
 def toggleVPNoff():
-  subprocess.run(
-      ["open", "/Applications/Cisco/Cisco AnyConnect Secure Mobility Client.app"])
-  time.sleep(0.6)
+  os.system("open /Applications/Cisco/Cisco AnyConnect Secure Mobility Client.app")
+  time.sleep(1)
   pyautogui.click(x=acX, y=acY)
-  time.sleep(0.6)
+  time.sleep(1)
   pyautogui.hotkey('command', 'q')
 
 def toggleVPNon():
-  subprocess.run(["open", "/Applications/VIP Access.app"])
-  time.sleep(0.5)
+  os.system("open \"/Applications/VIP Access.app\"")
+  time.sleep(1)
   pyautogui.click(x=vpnX, y=vpnY)
-  subprocess.run(
-      ["open", "/Applications/Cisco/Cisco AnyConnect Secure Mobility Client.app"])
-  time.sleep(1.2)
-  # pyautogui.moveTo(acX, acY, duration=0.10)
+  os.system("open \"/Applications/Cisco/Cisco AnyConnect Secure Mobility Client.app\"")
+  time.sleep(1)
   pyautogui.click(x=acX, y=acY)
   time.sleep(1)
   pyautogui.typewrite(password)
@@ -28,18 +26,15 @@ def toggleVPNon():
   pyautogui.hotkey('enter')
   time.sleep(1)
   pyautogui.hotkey('enter')
+  time.sleep(1)
   pyautogui.hotkey('enter')
+  time.sleep(1)
   pyautogui.hotkey('enter')
   time.sleep(2)
   pyautogui.hotkey('command', 'q')
 
 def launchApps():
-  subprocess.run(["open", "/Applications/Microsoft Outlook.app"])
   subprocess.run(["open", "/Applications/Slack.app"])
-  # subprocess.run(["open", "/Applications/Telegram.app"])
-  # subprocess.run(["open", "/Applications/Messages.app"])
-
-  webbrowser.open('https://mail.google.com/mail/u/1/')
   webbrowser.open('https://mail.google.com/mail/u/0/')
 
 if __name__ == '__main__':
