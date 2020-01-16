@@ -18,7 +18,7 @@ def toggleVPNon():
   time.sleep(1)
   pyautogui.click(x=vpnX, y=vpnY)
   os.system("open \"/Applications/Cisco/Cisco AnyConnect Secure Mobility Client.app\"")
-  time.sleep(1)
+  time.sleep(2)
   pyautogui.click(x=acX, y=acY)
   time.sleep(1)
   pyautogui.typewrite(password)
@@ -30,8 +30,6 @@ def toggleVPNon():
   pyautogui.hotkey('enter')
   time.sleep(1)
   pyautogui.hotkey('enter')
-  time.sleep(2)
-  pyautogui.hotkey('command', 'q')
 
 def launchApps():
   subprocess.run(["open", "/Applications/Slack.app"])
